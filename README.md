@@ -257,7 +257,15 @@ namespace DemoNetCore
 
 </details>
 
-## 14. Add Login get/post to home controller
+## 14. Add Register tab on Shared -> _Layout.cshtml
+
+```HTML
+ <li class="nav-item">
+      <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Register">Register</a>
+ </li>
+```
+
+## 15. Add Login get/post to home controller
 
 <details> 
   <summary>Login get/post methods </summary>
@@ -278,7 +286,7 @@ namespace DemoNetCore
 ```
 </details> 
 
-## 15. Add Login Model
+## 16. Add Login Model
 
 <details> 
   <summary>Login Model</summary>
@@ -294,7 +302,7 @@ namespace DemoNetCore
 ```
 </details>
 
-## 16. Add login view
+## 17. Add login view
 
 <details> 
   <summary>Login View </summary>
@@ -328,7 +336,7 @@ namespace DemoNetCore
 ```
 </details>
 
-## 17. Update login post method
+## 18. Update login post method
 
 <details> 
   <summary>Login post method </summary>
@@ -357,7 +365,7 @@ namespace DemoNetCore
 ```
 </details>
 
-## 18. Configure Login 
+## 19. Configure Login 
   1. Configure service 
 
 ```C#
@@ -368,4 +376,17 @@ namespace DemoNetCore
 
 ```C#
     app.UseAuthentication();
+```
+
+## 20. Add Authorize attribute to Privacy method
+
+## 21. Update content of Privacy.cshtml
+
+```HTML 
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h2>Authenticated!! </h2>
+
+<p> @User.Identity.Name</p>
 ```
