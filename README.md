@@ -141,6 +141,9 @@ namespace DemoNetCore
 ```
 
 ## 9. Update HomeController to have Register methods
+<details> 
+  <summary>Register get/post methods </summary>
+   
 ```C#
         [HttpGet]
         public IActionResult Register()
@@ -154,6 +157,7 @@ namespace DemoNetCore
 
         }
 ```
+</details>
 
 ## 10. Add Register Model
 <details> 
@@ -226,7 +230,9 @@ namespace DemoNetCore
 </details>
 
 ## 13. Modify Register post method
-
+<details> 
+  <summary>Register method content </summary>
+   
 ```C#
             if(ModelState.IsValid)
             {
@@ -248,8 +254,13 @@ namespace DemoNetCore
 
             return View();  
 ```
+
+</details>
+
 ## 14. Add Login get/post to home controller
 
+<details> 
+  <summary>Login get/post methods </summary>
 
 ```C#
         [HttpGet]
@@ -265,6 +276,7 @@ namespace DemoNetCore
             
         }
 ```
+</details> 
 
 ## 15. Add Login Model
 
@@ -319,7 +331,7 @@ namespace DemoNetCore
 ## 17. Update login post method
 
 <details> 
-  <summary>Login View </summary>
+  <summary>Login post method </summary>
 
 ```C#
             if (ModelState.IsValid)
